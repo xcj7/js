@@ -35,3 +35,59 @@ for (let index = 0; index < 20; index++) {
             continue;
         }
 }
+
+
+/////////////////////
+// forEach
+const coding =["js","ruby","java","python","cpp"]
+
+coding.forEach(  function(item){
+    console.log(item);
+}
+
+)
+////
+coding.forEach(
+    (i)=>{
+        console.log(i);
+    }
+)
+
+////
+console.log("<<<<<<<<>>>>>>>>")
+function printMe(item)
+{
+    console.log(item);
+}
+
+coding.forEach(printMe)
+console.log("<<<<<<<</////>>>>>>>>")
+////
+
+coding.forEach(  (item,index,array)=>{
+console.log(item,index,array)
+
+}    )
+
+///////
+
+const myCoding = [
+    {
+        languageName:"javascript",
+        languageFileName:"js"
+    },
+    {
+        languageName:"Python",
+        languageFileName:"py"
+    },
+    {
+        languageName:"Ruby",
+        languageFileName:"rb"
+    }
+]
+////////////////   call back  funtion  (item)  // no function name is needed
+myCoding.forEach((item)=>{
+    console.log(item.languageName);
+})
+
+
