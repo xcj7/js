@@ -44,6 +44,6 @@ const books = [
     {title:'Book 8',genre:'Fiction',publish:1981,edition:2011},
     {title:'Book 9',genre:'Fiction',publish:1981,edition:2012},
     {title:'Book 10',genre:'Fiction',publish:1981,edition:2013},
-    {title:'Book 11',genre:'Fiction',publish:1981,edition:2014},
+    {title:'Book 11',genre:'Fiction',publish:1981,edition:2014}
 
-]
+] 
