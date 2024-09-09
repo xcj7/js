@@ -1,0 +1,31 @@
+.button{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 3 equal columns */
+    grid-gap: 10px; /* space between the grid items */
+}
+
+
+
+.grid-item{
+    background-color: lightblue;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.buttonnav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+    grid-gap: 10px; /* space between the grid items */
+}
+.gridnav-item{
+    background-color: hsla(32, 88%, 50%, 0.774);
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item:last-child {
+    background-color: lightcoral; /* Change the color of the last item */
+  }
