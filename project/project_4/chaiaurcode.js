@@ -1,6 +1,6 @@
 //console.log(parseInt(Math.random()*100 +1))
 let randomNumber = parseInt(Math.random()*100 +1)
-console.log(randomNumber)
+console.log(`The random number is ${randomNumber}`)
 
 const submit = document.querySelector('#subt')
 const userInput = document.querySelector('#guessField')
