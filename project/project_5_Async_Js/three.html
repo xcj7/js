@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Js project 1</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+</br>
+    <button id="colorstart">color start</button>
+    <button id="colorstop">color Stop</button>
+<script>
+
+
+let intervalId;
+    const sayDate = function(str){
+        console.log(str,Date.now())
+    }
+
+
+document.querySelector('#start').addEventListener('click',function(){
+if(!intervalId){
+    intervalId= setInterval(sayDate
+    ,1000,'hi')
+}
+}
+)
+
+ 
+
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(intervalId)
+    intervalId = null;
+});
+
+//generate a random color
+
+const randomColor = function(){
+    const hex= "0123456789ABCDEF"
+    let color = '#'
+    for(let i = 0;i<6;i++)
+{
+    color += hex[Math.floor(Math.random() * 16)]
+
+
+}
+return color;
+};
+//console.log(Math.floor(Math.random()*16));
+   
+let colorchange ; 
+
+function changeBgColor(){
+    document.body.style.backgroundColor = randomColor();
+}
+
+document.querySelector('#colorstart').addEventListener('click',function(){
+    // document.body.style.backgroundColor = randomColor();
+    if(!colorchange){
+        colorchange=setInterval(changeBgColor,1000);
+    }
+    // colorchange=setInterval(changeBgColor,1000);
+})
+
+document.querySelector('#colorstop').addEventListener('click',function(){
+    // document.body.style.backgroundColor = randomColor();
+    colorchange=clearInterval(colorchange);
+    colorchange = null;
+})
+
+</script>
+</body>
+</html>
